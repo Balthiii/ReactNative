@@ -54,7 +54,7 @@ React Native est un framework qui permet de créer des applications mobiles mult
 
 Les cores components de React Native sont des composants de base qui permettent de créer des interfaces utilisateurs. Ils utilisent des composants natifs pour créer des interfaces utilisateur.
 
-![alt text](components.png)
+![alt text](components.PNG)
 
 ### En cas de modifications majeure (ajout de dépendances ,etc...):
 
