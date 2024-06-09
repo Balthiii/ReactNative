@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, TextInput, Button, StyleSheet, FlatList, Text } from 'react-native';
 import * as SecureStore from 'expo-secure-store';
 
@@ -6,6 +6,17 @@ export default function GoodActionsScreen() {
   const [action, setAction] = useState('');
   const [actions, setActions] = useState([]);
 
+  useEffect(() => {
+    SecureStore.getItemAsync('actions').then(storedActions => {
+      if (storedActions) {
+        setActions(JSON.parse(storedActions));
+      }
+    });
+  }, []);
+
+  useEffect(() => {
+    SecureStore.setItemAsync('actions', JSON.stringify(actions));
+  }, [actions]);
   
   const handleSubmit = () => {
     setActions(prevActions => [...prevActions, action]);
