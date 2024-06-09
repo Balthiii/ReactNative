@@ -52,7 +52,7 @@ Une ligne de code doit être modifié dans le fichier package.json
 
 React Native est un framework qui permet de créer des applications mobiles multiplateformes en utilisant React. Il est basé sur les composants de React.
 
-Le cores components de React Native sont des composants de base qui permettent de créer des interfaces utilisateurs. Ils utilisent des composants natifs pour créer des interfaces utilisateur.
+Les cores components de React Native sont des composants de base qui permettent de créer des interfaces utilisateurs. Ils utilisent des composants natifs pour créer des interfaces utilisateur.
 
 ![alt text](components.PNG)
 
